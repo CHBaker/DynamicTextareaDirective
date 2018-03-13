@@ -1,6 +1,6 @@
 {
   "name": "dynamic-textarea-directive",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Attribute Directive that changes the size of the textarea dynamically with optional min/max height properties",
   "main": "index.ts",
   "scripts": {
