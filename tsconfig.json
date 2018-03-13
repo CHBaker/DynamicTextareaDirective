@@ -21,7 +21,7 @@
       "@angular/core": ["node_modules/@angular/core"],
     }
   },
-  "include": ["./index.ts", "./src/autosize.directive.ts"],
+  "include": ["./src/*"],
   "exclude": ["node_modules"],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,
