@@ -1,0 +1,28 @@
+{
+  "name": "dynamic-textarea-directive",
+  "version": "1.0.0",
+  "description": "Attribute Directive that changes the size of the textarea dynamically with optional min/max height properties",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHBaker/DynamicTextareaDirective.git"
+  },
+  "keywords": [
+    "directive",
+    "angular",
+    "textarea",
+    "dynamic",
+    "autosize",
+    "autogrow",
+    "attribute"
+  ],
+  "author": "Charles Baker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CHBaker/DynamicTextareaDirective/issues"
+  },
+  "homepage": "https://github.com/CHBaker/DynamicTextareaDirective#readme"
+}
