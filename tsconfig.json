@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "strictMetadataEmit": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "lib": ["es2015", "dom"],
@@ -21,7 +20,7 @@
       "@angular/core": ["node_modules/@angular/core"],
     }
   },
-  "include": ["./src/*"],
+  "files": ["./src/index.ts"],
   "exclude": ["node_modules"],
   "angularCompilerOptions": {
     "strictMetadataEmit": true,

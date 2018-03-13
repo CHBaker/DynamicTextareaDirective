@@ -1,7 +1,6 @@
 export default {
   entry: 'dist/index.js',
-  dest: 'dist/bundles/amazing.umd.js',
-  sourceMap: false,
+  dest: 'dist/bundles/dynamictextareadirective.umd.js',
   format: 'umd',
   moduleName: 'ng.dynamictextareadirective',
   globals: {
