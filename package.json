@@ -29,9 +29,11 @@
   },
   "homepage": "https://github.com/CHBaker/DynamicTextareaDirective#readme",
   "devDependencies": {
-    "@angular/compiler": "2.4.7",
-    "@angular/compiler-cli": "2.4.7",
+    "@angular/compiler": "^2.4.7",
+    "@angular/compiler-cli": "^2.4.7",
     "@angular/core": "2.4.7",
-    "typescript": "^2.0.6"
+    "rollup": "^0.56.5",
+    "typescript": "^2.7.2",
+    "uglify-js": "^3.3.14"
   }
 }
