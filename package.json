@@ -4,7 +4,11 @@
   "description": "Attribute Directive that changes the size of the textarea dynamically with optional min/max height properties",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "ngc",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/amazing.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/amazing.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
   },
   "repository": {
     "type": "git",
