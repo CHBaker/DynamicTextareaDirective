@@ -1,4 +1,5 @@
-# dynamic-textarea-directive
+# DynamicTextareaDirective
+Attribute Directive that changes the size of the textarea dynamically with optional min/max height properties
 
 ## Installation
 
@@ -8,64 +9,49 @@ To install this library, run:
 $ npm install dynamic-textarea-directive --save
 ```
 
-## Consuming your library
-
-Once you have published your library to npm, you can import your library in any Angular application by running:
-
-```bash
-$ npm install dynamic-textarea-directive
-```
-
-and then from your Angular `AppModule`:
+## Using just the directive
 
 ```typescript
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
-// Import your library
-import { SampleModule } from 'dynamic-textarea-directive';
+...
+import { DynamicTextAreaDirective } from 'dynamic-textarea-directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    DynamicTextAreaDirective
   ],
   imports: [
-    BrowserModule,
-
-    // Specify your library as an import
-    LibraryModule
+    ...
   ],
-  providers: [],
+  providers: [
+      ...
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
 
-Once your library is imported, you can use its components, directives and pipes in your Angular application:
+Attach the directive to a <textarea> tag, or a tag with a nested <textarea> (for electron):
 
 ```xml
-<!-- You can now use your library component in app.component.html -->
-<h1>
-  {{title}}
-</h1>
-<sampleComponent></sampleComponent>
+    <textarea appDynamicTextarea></textarea>
 ```
 
-## Development
+and your Textarea will grow dynamically! If you want max/min height set on it, bind to them and pass the number without 'px':
 
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run build
+```xml
+    <textarea
+        appDynamicTextarea
+        [minHeight]='100'
+        [maxHeight]='150'
+    >
+    </textarea>
 ```
 
-To lint all `*.ts` files:
+depending on the browser and default styles, the heights may very based on the textareas border/padding/other. A plain text input varies by about 8 pixels, so play around with it to find the right height depending on the other styles inpact.
 
-```bash
-$ npm run lint
-```
+## Repo
+
+https://github.com/CHBaker/Instant-Messages
 
 ## License
 
