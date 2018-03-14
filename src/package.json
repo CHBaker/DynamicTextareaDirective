@@ -1,0 +1,28 @@
+{
+  "name": "dynamic-textarea-directive",
+  "version": "1.6.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CHBaker/DynamicTextareaDirective"
+  },
+  "author": {
+    "name": "Charles Hudson Baker",
+    "email": "charlesprobaker@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CHBaker/DynamicTextareaDirective/issues"
+  },
+  "main": "dynamic-textarea-directive.umd.js",
+  "module": "dynamic-textarea-directive.js",
+  "jsnext:main": "dynamic-textarea-directive.js",
+  "typings": "dynamic-textarea-directive.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
