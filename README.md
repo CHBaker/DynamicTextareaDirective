@@ -9,6 +9,29 @@ To install this library, run:
 $ npm install dynamic-textarea-directive --save
 ```
 
+## Using the module
+
+if you want the module as well as the directive import the module
+
+```typescript
+...
+import { DynamicTextareaModule } from 'dynamic-textarea-directive';
+
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+  ],
+  providers: [
+    DynamicTextareaModule
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
 ## Using just the directive
 
 ```typescript

@@ -9,10 +9,8 @@ export * from './dynamic-textarea.directive';
   declarations: [DynamicTextareaDirective],
   exports: [DynamicTextareaDirective]
 })
-export class SampleModule {
+export class DynamicTextareaModule {
   static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: SampleModule
-    };
+    return { ngModule: DynamicTextareaModule };
   }
 }
